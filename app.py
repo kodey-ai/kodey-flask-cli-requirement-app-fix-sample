@@ -8,7 +8,7 @@ def hello_world():
     """
     Endpoint to return a simple Hello World message.
     """
-    return jsonifys(message="Hello, World!")
+    return jsonify(message="Hello, World!")
 
 @app.route('/datetime', methods=['GET'])
 def get_current_datetime():
@@ -43,4 +43,3 @@ def page_not_found(e):
 if __name__ == '__main__':
     # Run the Flask app in debug mode
     app.run(debug=True, host="127.0.0.1", port="8888")
-
